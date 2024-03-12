@@ -182,5 +182,5 @@ private:
 
 	CInnerThreadPool		m_thPool;
 
-	DECLARE_NO_COPY_CLASS(CHPThreadPool)
+	DECLARE_NO_COPY_HP_CLASS(CHPThreadPool)
 };

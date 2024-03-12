@@ -87,7 +87,7 @@ private:
 
 	~TItem() {}
 
-	DECLARE_NO_COPY_CLASS(TItem)
+	DECLARE_NO_COPY_HP_CLASS(TItem)
 
 public:
 	static const DWORD DEFAULT_ITEM_CAPACITY;
@@ -242,7 +242,7 @@ public:
 	TSimpleList()	{Reset();}
 	~TSimpleList()	{Clear();}
 
-	DECLARE_NO_COPY_CLASS(TSimpleList<T>)
+	DECLARE_NO_COPY_HP_CLASS(TSimpleList<T>)
 
 private:
 	void Reset()
@@ -324,7 +324,7 @@ public:
 
 	~CNodePoolT()	{Clear();}
 
-	DECLARE_NO_COPY_CLASS(CNodePoolT)
+	DECLARE_NO_COPY_HP_CLASS(CNodePoolT)
 
 public:
 	static const DWORD DEFAULT_ITEM_CAPACITY;
@@ -601,7 +601,7 @@ public:
 		ASSERT(length >= 0);
 	}
 
-	DECLARE_NO_COPY_CLASS(TItemListExT)
+	DECLARE_NO_COPY_HP_CLASS(TItemListExT)
 
 private:
 	length_t length;
@@ -668,7 +668,7 @@ public:
 		Reset();
 	}
 
-	DECLARE_NO_COPY_CLASS(TItemPtrT)
+	DECLARE_NO_COPY_HP_CLASS(TItemPtrT)
 
 private:
 	CNodePoolT<T>&	itPool;
@@ -719,7 +719,7 @@ private:
 
 	~TBuffer()	{}
 
-	DECLARE_NO_COPY_CLASS(TBuffer)
+	DECLARE_NO_COPY_HP_CLASS(TBuffer)
 
 private:
 	CPrivateHeap&	heap;
@@ -793,7 +793,7 @@ public:
 
 	~CBufferPool()	{Clear();}
 
-	DECLARE_NO_COPY_CLASS(CBufferPool)
+	DECLARE_NO_COPY_HP_CLASS(CBufferPool)
 
 public:
 	CPrivateHeap&	GetPrivateHeap()	{return m_heap;}

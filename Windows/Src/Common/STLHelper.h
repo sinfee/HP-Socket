@@ -593,7 +593,7 @@ template<class Set, class Cleaner> struct SetWrapper
 protected:
 	Set m_set;
 
-	DECLARE_NO_COPY_CLASS(SetWrapper)
+	DECLARE_NO_COPY_HP_CLASS(SetWrapper)
 };
 
 template<class Set, class Cleaner> struct VectorWrapper : public SetWrapper<Set, Cleaner>
@@ -605,7 +605,7 @@ template<class Set, class Cleaner> struct VectorWrapper : public SetWrapper<Set,
 	reference		operator []	(size_type i)			{return m_set[i];}
 	const_reference operator []	(size_type i)	const	{return m_set[i];}
 
-	DECLARE_NO_COPY_CLASS(VectorWrapper)
+	DECLARE_NO_COPY_HP_CLASS(VectorWrapper)
 };
 
 /************************************************************************/
@@ -660,7 +660,7 @@ template<class Map, class Cleaner> struct MapWrapper
 private:
 	Map m_map;
 
-	DECLARE_NO_COPY_CLASS(MapWrapper)
+	DECLARE_NO_COPY_HP_CLASS(MapWrapper)
 };
 
 /************************************************************************/

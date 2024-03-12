@@ -70,7 +70,7 @@ private:																	\
 	ClassName(const ClassName&);											\
 	ClassName& operator = (const ClassName&);
 
-#define DECLARE_NO_COPY_CLASS(className)									\
+#define DECLARE_NO_COPY_HP_CLASS(className)									\
 		DECLARE_PRIVATE_COPY_CONSTRUCTOR(className)
 
 

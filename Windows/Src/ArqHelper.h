@@ -740,7 +740,7 @@ public:
 
 	~CArqSessionPoolT()	{Clear();}
 
-	DECLARE_NO_COPY_CLASS(CArqSessionPoolT)
+	DECLARE_NO_COPY_HP_CLASS(CArqSessionPoolT)
 
 public:
 	static const DWORD DEFAULT_SESSION_LOCK_TIME;

@@ -377,7 +377,7 @@ public:
 
 	~CSSLSessionPool()	{Clear();}
 
-	DECLARE_NO_COPY_CLASS(CSSLSessionPool)
+	DECLARE_NO_COPY_HP_CLASS(CSSLSessionPool)
 
 public:
 	static const DWORD DEFAULT_ITEM_CAPACITY;

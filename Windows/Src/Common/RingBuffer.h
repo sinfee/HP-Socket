@@ -1529,7 +1529,7 @@ public:
 		delete m_pHead;
 	}
 
-	DECLARE_NO_COPY_CLASS(CCASQueueX)
+	DECLARE_NO_COPY_HP_CLASS(CCASQueueX)
 
 private:
 	VLONG	m_lLock;
@@ -1675,7 +1675,7 @@ public:
 		UnsafeClear();
 	}
 
-	DECLARE_NO_COPY_CLASS(CCASQueueY)
+	DECLARE_NO_COPY_HP_CLASS(CCASQueueY)
 
 private:
 	CCriSec		m_csGuard;

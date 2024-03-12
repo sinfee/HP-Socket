@@ -184,7 +184,7 @@ private:
 	DWORD	m_dwProcID;
 	BOOL	m_bIsFirstApp;
 
-	DECLARE_NO_COPY_CLASS(COnlyOneApp)
+	DECLARE_NO_COPY_HP_CLASS(COnlyOneApp)
 };
 
 class COnlyOneWndApp
@@ -201,7 +201,7 @@ public:
 private:
 	HWND m_hwndPre;
 
-	DECLARE_NO_COPY_CLASS(COnlyOneWndApp)
+	DECLARE_NO_COPY_HP_CLASS(COnlyOneWndApp)
 };
 
 /************************************************************************/

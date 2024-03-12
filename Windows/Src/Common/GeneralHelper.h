@@ -146,8 +146,12 @@ _WIN32_WINNT_WIN10		0x0A00
 	#if defined (_WIN64)
 		#if _MSC_VER >= 1930
 			#define _WIN32_WINNT	_WIN32_WINNT_WIN10
-		#else
+		//#else
+		//	#define _WIN32_WINNT	_WIN32_WINNT_WIN7
+		#elif _MSC_VER >= 1900
 			#define _WIN32_WINNT	_WIN32_WINNT_WIN7
+		#else
+			#define _WIN32_WINNT	_WIN32_WINNT_WINXP
 		#endif
 	#else
 		#if _MSC_VER >= 1930

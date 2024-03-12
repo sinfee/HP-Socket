@@ -189,7 +189,7 @@ private:
 
 	TWorker m_Worker;
 
-	DECLARE_NO_COPY_CLASS(CThread)
+	DECLARE_NO_COPY_HP_CLASS(CThread)
 };
 
 template<class T, typename construct_param_type = void*> class CTlsObj
@@ -362,7 +362,7 @@ private:
 	CSimpleRWLock	m_lock;
 	TLocalMap		m_map;
 
-	DECLARE_NO_COPY_CLASS(CTlsObj)
+	DECLARE_NO_COPY_HP_CLASS(CTlsObj)
 };
 
 template<class T> class CTlsSimple
@@ -473,7 +473,7 @@ public:
 		Clear();
 	}
 
-	DECLARE_NO_COPY_CLASS(CTlsSimple)
+	DECLARE_NO_COPY_HP_CLASS(CTlsSimple)
 
 private:
 

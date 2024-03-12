@@ -1353,7 +1353,7 @@ public:
 
 	~CHttpObjPoolT()	{Clear();}
 
-	DECLARE_NO_COPY_CLASS(CHttpObjPoolT)
+	DECLARE_NO_COPY_HP_CLASS(CHttpObjPoolT)
 
 public:
 	static const DWORD DEFAULT_HTTPOBJ_LOCK_TIME;
